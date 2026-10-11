@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging Challenge</title>
+</head>
+<body>
+    <h1>My Debugging Website</h1>
+
+    <p id="message">Welcome to my website!</p>
+
+    <button id="welcomeBtn">Click Me</button>
+
+    <script>
+        const button = document.getElementById("welcomeBtn");
+       const message = document.getElementById("message");
+
+        button.addEventListener("click", function () {
+            message.textContent = "Button is working!";
+        });
+
+        console.log("Website loaded successfully!");
+    </script>
+</body>
+</html>
